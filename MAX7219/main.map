@@ -11,13 +11,13 @@ c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/6.2.0/thumb/cortex_m3\libgcc.a(_arm_f
 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/6.2.0/thumb/cortex_m3\libgcc.a(_aeabi_ldivmod.o)
                               hwlib.o (__aeabi_ldivmod)
 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/6.2.0/thumb/cortex_m3\libgcc.a(_aeabi_uldivmod.o)
-                              MAXimus.o (__aeabi_uldivmod)
+                              display.o (__aeabi_uldivmod)
 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/6.2.0/thumb/cortex_m3\libgcc.a(_udivmoddi4.o)
                               c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/6.2.0/thumb/cortex_m3\libgcc.a(_aeabi_ldivmod.o) (__udivmoddi4)
 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/6.2.0/thumb/cortex_m3\libgcc.a(_dvmd_tls.o)
                               c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/6.2.0/thumb/cortex_m3\libgcc.a(_aeabi_ldivmod.o) (__aeabi_ldiv0)
 c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/6.2.0/../../../../arm-eabi/lib/thumb/cortex_m3\libc.a(lib_a-memset.o)
-                              MAXimus.o (memset)
+                              display.o (memset)
 
 Allocating common symbols
 Common symbol       size              file
@@ -26,60 +26,116 @@ __dso_handle        0x4               bmptk_cortex.o
 
 Discarded input sections
 
- .group         0x00000000        0x8 MAXimus.o
- .group         0x00000000        0x8 MAXimus.o
- .group         0x00000000        0x8 MAXimus.o
- .group         0x00000000        0x8 MAXimus.o
- .group         0x00000000        0x8 MAXimus.o
- .group         0x00000000        0x8 MAXimus.o
- .group         0x00000000        0x8 MAXimus.o
- .group         0x00000000        0x8 MAXimus.o
- .group         0x00000000        0x8 MAXimus.o
- .text          0x00000000        0x0 MAXimus.o
- .data          0x00000000        0x0 MAXimus.o
- .bss           0x00000000        0x0 MAXimus.o
+ .group         0x00000000        0x8 display.o
+ .group         0x00000000        0x8 display.o
+ .group         0x00000000        0x8 display.o
+ .group         0x00000000        0x8 display.o
+ .group         0x00000000        0x8 display.o
+ .group         0x00000000        0x8 display.o
+ .group         0x00000000        0x8 display.o
+ .group         0x00000000        0x8 display.o
+ .group         0x00000000        0x8 display.o
+ .text          0x00000000        0x0 display.o
+ .data          0x00000000        0x0 display.o
+ .bss           0x00000000        0x0 display.o
  .text._ZN5hwlib6pin_in7refreshEv
-                0x00000000        0x2 MAXimus.o
+                0x00000000        0x2 display.o
  .text._ZN3due6pin_in3getEN5hwlib9bufferingE
-                0x00000000       0x10 MAXimus.o
+                0x00000000       0x10 display.o
+ .text._ZN5hwlib7ostream6fillerEi
+                0x00000000       0x1a display.o
+ .text._ZN5hwliblsERNS_7ostreamEPKc
+                0x00000000       0x54 display.o
+ .text._ZN5hwliblsERNS_7ostreamEi
+                0x00000000       0xd6 display.o
  .text._ZN3due11ad_pin_infoENS_7ad_pinsE
-                0x00000000       0x1c MAXimus.o
+                0x00000000       0x1c display.o
  .text._ZN3due11ad_seq_infoEm
-                0x00000000       0x20 MAXimus.o
+                0x00000000       0x20 display.o
  .text._ZN3due6now_usEv
-                0x00000000       0x78 MAXimus.o
+                0x00000000       0x78 display.o
  .text._ZN5hwlib7wait_nsEi
-                0x00000000       0x14 MAXimus.o
+                0x00000000       0x14 display.o
+ .text._ZN5hwlib9uart_putcEc
+                0x00000000       0x40 display.o
  .text._ZN5hwlib9uart_getcEv
-                0x00000000       0x3c MAXimus.o
+                0x00000000       0x3c display.o
  .text._ZN5hwlib6now_usEv
-                0x00000000        0x8 MAXimus.o
- .text._ZN7MAXimus8sendDataEh
-                0x00000000       0x32 MAXimus.o
- .text._ZN7MAXimus12selectAdressEh
-                0x00000000        0x4 MAXimus.o
- .text._ZN7MAXimus10printFrameEv
-                0x00000000       0x48 MAXimus.o
- .text._ZN7MAXimus11resetMatrixEv
-                0x00000000       0x16 MAXimus.o
+                0x00000000        0x8 display.o
+ .text._ZN7display8sendDataEh
+                0x00000000       0x32 display.o
+ .text._ZN7display12selectAdressEh
+                0x00000000        0x4 display.o
+ .text._ZN7display13setAdressDataEhh
+                0x00000000       0x46 display.o
+ .text._ZN7display3setERK10coordinate
+                0x00000000       0x32 display.o
+ .text._ZN7display6updateEv
+                0x00000000       0x3c display.o
+ .text._ZN7display4drawERK10coordinate
+                0x00000000       0x12 display.o
+ .text._ZN7display10printFrameEv
+                0x00000000       0x4c display.o
+ .text._ZN7display11resetMatrixEv
+                0x00000000       0x16 display.o
+ .text._ZN7display10drawMatrixEPKiii
+                0x00000000       0x20 display.o
+ .text._Z10clearArrayPi
+                0x00000000       0x10 display.o
+ .text._ZN7display13drawAnimationEPA8_Kiiiiib
+                0x00000000       0xa0 display.o
+ .text._ZN7display8drawTextEPc
+                0x00000000      0x1b0 display.o
  .rodata._ZTVN3due6pin_inE
-                0x00000000       0x10 MAXimus.o
+                0x00000000       0x10 display.o
  .bss._ZGVZN5hwlib9uart_getcEvE3pin
-                0x00000000        0x4 MAXimus.o
+                0x00000000        0x4 display.o
+ .bss._ZGVZN5hwlib9uart_putcEcE3pin
+                0x00000000        0x4 display.o
  .bss._ZZN3due6now_usEvE4high
-                0x00000000        0x8 MAXimus.o
+                0x00000000        0x8 display.o
  .bss._ZZN3due6now_usEvE8last_low
-                0x00000000        0x4 MAXimus.o
+                0x00000000        0x4 display.o
  .bss._ZZN3due6now_usEvE9init_done
-                0x00000000        0x1 MAXimus.o
+                0x00000000        0x1 display.o
  .bss._ZZN5hwlib9uart_getcEvE3pin
-                0x00000000        0xc MAXimus.o
- .rodata._ZN7MAXimus10printFrameEv.str1.1
-                0x00000000        0x4 MAXimus.o
+                0x00000000        0xc display.o
+ .bss._ZZN5hwlib9uart_putcEcE3pin
+                0x00000000        0xc display.o
+ .rodata._ZL1A  0x00000000       0x20 display.o
+ .rodata._ZL1B  0x00000000       0x20 display.o
+ .rodata._ZL1C  0x00000000       0x20 display.o
+ .rodata._ZL1D  0x00000000       0x20 display.o
+ .rodata._ZL1E  0x00000000       0x20 display.o
+ .rodata._ZL1F  0x00000000       0x20 display.o
+ .rodata._ZL1G  0x00000000       0x20 display.o
+ .rodata._ZL1H  0x00000000       0x20 display.o
+ .rodata._ZL1I  0x00000000       0x20 display.o
+ .rodata._ZL1J  0x00000000       0x20 display.o
+ .rodata._ZL1K  0x00000000       0x20 display.o
+ .rodata._ZL1L  0x00000000       0x20 display.o
+ .rodata._ZL1M  0x00000000       0x20 display.o
+ .rodata._ZL1N  0x00000000       0x20 display.o
+ .rodata._ZL1O  0x00000000       0x20 display.o
+ .rodata._ZL1P  0x00000000       0x20 display.o
+ .rodata._ZL1Q  0x00000000       0x20 display.o
+ .rodata._ZL1R  0x00000000       0x20 display.o
+ .rodata._ZL1S  0x00000000       0x20 display.o
+ .rodata._ZL1T  0x00000000       0x20 display.o
+ .rodata._ZL1U  0x00000000       0x20 display.o
+ .rodata._ZL1V  0x00000000       0x20 display.o
+ .rodata._ZL1W  0x00000000       0x20 display.o
+ .rodata._ZL1X  0x00000000       0x20 display.o
+ .rodata._ZL1Y  0x00000000       0x20 display.o
+ .rodata._ZL1Z  0x00000000       0x20 display.o
+ .rodata._ZL5space
+                0x00000000       0x20 display.o
+ .rodata._ZN7display10printFrameEv.str1.1
+                0x00000000        0x4 display.o
  .rodata._ZZN3due11ad_pin_infoENS_7ad_pinsEE17ad_pin_info_array
-                0x00000000        0xc MAXimus.o
+                0x00000000        0xc display.o
  .rodata._ZZN3due11ad_seq_infoEmE12ad_seq_array
-                0x00000000       0x70 MAXimus.o
+                0x00000000       0x70 display.o
  .group         0x00000000        0x8 hwlib.o
  .group         0x00000000        0x8 hwlib.o
  .group         0x00000000        0x8 hwlib.o
@@ -148,6 +204,8 @@ Discarded input sections
                 0x00000000        0x2 hwlib.o
  .text._ZN5hwlib19_pin_oc_dummy_class3getENS_9bufferingE
                 0x00000000        0x4 hwlib.o
+ .text._ZN5hwlib7ostream5flushEv
+                0x00000000        0x2 hwlib.o
  .text._ZNK5hwlib9image_8x818get_implementationENS_8locationE
                 0x00000000       0x44 hwlib.o
  .text._ZN3due6pin_in3getEN5hwlib9bufferingE
@@ -184,6 +242,8 @@ Discarded input sections
                 0x00000000       0x78 hwlib.o
  .text._ZN5hwlib7wait_usEi
                 0x00000000       0x28 hwlib.o
+ .text._ZN5hwlib24uart_putc_bit_banged_pinEcRNS_7pin_outE
+                0x00000000       0x64 hwlib.o
  .text._ZN5hwlib7wait_nsEi
                 0x00000000       0x14 hwlib.o
  .text._ZN5hwlib7wait_msEi
@@ -204,6 +264,8 @@ Discarded input sections
                 0x00000000       0x36 hwlib.o
  .text._ZN5hwlib9uart_putcEc
                 0x00000000       0x3c hwlib.o
+ .text._ZN5hwlib20cout_using_uart_putc4putcEc
+                0x00000000        0xa hwlib.o
  .text._ZN5hwlib6now_usEv
                 0x00000000        0x8 hwlib.o
  .text._ZN5hwlib24uart_getc_bit_banged_pinERNS_6pin_inE
@@ -220,6 +282,8 @@ Discarded input sections
                 0x00000000       0x10 hwlib.o
  .rodata._ZTVN5hwlib19_pin_oc_dummy_classE
                 0x00000000       0x18 hwlib.o
+ .rodata._ZTVN5hwlib20cout_using_uart_putcE
+                0x00000000       0x10 hwlib.o
  .rodata._ZTVN5hwlib19cin_using_uart_getcE
                 0x00000000        0xc hwlib.o
  .rodata._ZTVN5hwlib9image_8x8E
@@ -262,6 +326,8 @@ Discarded input sections
                 0x00000000        0x4 hwlib.o
  .data._ZN5hwlib3cinE
                 0x00000000        0x4 hwlib.o
+ .data._ZN5hwlib4coutE
+                0x00000000       0x14 hwlib.o
  .rodata._ZN3due8pin_infoENS_4pinsE.str1.1
                 0x00000000       0x33 hwlib.o
  .rodata._ZN5hwlib16font_default_8x86imagesE
@@ -285,11 +351,6 @@ Discarded input sections
  .group         0x00000000        0x8 main.o
  .group         0x00000000        0x8 main.o
  .group         0x00000000        0x8 main.o
- .group         0x00000000        0x8 main.o
- .group         0x00000000        0x8 main.o
- .group         0x00000000        0x8 main.o
- .group         0x00000000        0x8 main.o
- .group         0x00000000        0x8 main.o
  .text          0x00000000        0x0 main.o
  .data          0x00000000        0x0 main.o
  .bss           0x00000000        0x0 main.o
@@ -301,12 +362,6 @@ Discarded input sections
                 0x00000000       0x10 main.o
  .text._ZN3due7pin_out3setEbN5hwlib9bufferingE
                 0x00000000        0xe main.o
- .text._ZN5hwlib7ostream6fillerEi
-                0x00000000       0x1a main.o
- .text._ZN5hwliblsERNS_7ostreamEPKc
-                0x00000000       0x54 main.o
- .text._ZN5hwliblsERNS_7ostreamEi
-                0x00000000       0xd6 main.o
  .text._ZN3due8pin_infoENS_4pinsE
                 0x00000000       0x20 main.o
  .text._ZN3due11ad_pin_infoENS_7ad_pinsE
@@ -333,6 +388,7 @@ Discarded input sections
                 0x00000000       0x14 main.o
  .text._Z3powfi
                 0x00000000       0x1c main.o
+ .text.abs      0x00000000       0x10 main.o
  .text._Z3absf  0x00000000       0x2c main.o
  .text._Z4sqrtf
                 0x00000000       0x34 main.o
@@ -432,7 +488,7 @@ nul              0x20000000         0x00000000         xrw
 Linker script and memory map
 
 LOAD c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/6.2.0/thumb/cortex_m3\libgcc.a
-LOAD MAXimus.o
+LOAD display.o
 LOAD hwlib.o
 LOAD main.o
 LOAD bmptk_cortex.o
@@ -457,7 +513,7 @@ END GROUP
                 [!provide]                PROVIDE (__ram_size, __ram_size)
                 [!provide]                PROVIDE (__ram_end, __ram_end)
 
-.text           0x00000000      0x984
+.text           0x00000000      0x4f4
                 0x00000000                . = ALIGN (0x4)
                 0x00000000                __text_start = .
                 [!provide]                PROVIDE (__text_start, __text_start)
@@ -468,156 +524,113 @@ END GROUP
                 0x00000020                . = ALIGN (0x4)
  *(.text .text.* .gnu.linkonce.t.*)
  .text._ZN5hwlib7pin_out5flushEv
-                0x00000020        0x2 MAXimus.o
+                0x00000020        0x2 display.o
                 0x00000020                _ZN5hwlib7pin_out5flushEv
  .text._ZN3due7pin_out3setEbN5hwlib9bufferingE
-                0x00000022        0xe MAXimus.o
+                0x00000022        0xe display.o
                 0x00000022                _ZN3due7pin_out3setEbN5hwlib9bufferingE
- .text._ZN5hwlib7ostream6fillerEi
-                0x00000030       0x1a MAXimus.o
-                0x00000030                _ZN5hwlib7ostream6fillerEi
- .text._ZN5hwliblsERNS_7ostreamEPKc
-                0x0000004a       0x54 MAXimus.o
-                0x0000004a                _ZN5hwliblsERNS_7ostreamEPKc
- .text._ZN5hwliblsERNS_7ostreamEi
-                0x0000009e       0xd6 MAXimus.o
-                0x0000009e                _ZN5hwliblsERNS_7ostreamEi
  .text._ZN3due8pin_infoENS_4pinsE
-                0x00000174       0x20 MAXimus.o
-                0x00000174                _ZN3due8pin_infoENS_4pinsE
+                0x00000030       0x20 display.o
+                0x00000030                _ZN3due8pin_infoENS_4pinsE
  .text._ZN3due14port_registersEm
-                0x00000194       0x48 MAXimus.o
-                0x00000194                _ZN3due14port_registersEm
- *fill*         0x000001dc        0x4 
+                0x00000050       0x48 display.o
+                0x00000050                _ZN3due14port_registersEm
+ *fill*         0x00000098        0x8 
  .text._ZN5hwlib7wait_usEi
-                0x000001e0       0x28 MAXimus.o
-                0x000001e0                _ZN5hwlib7wait_usEi
+                0x000000a0       0x28 display.o
+                0x000000a0                _ZN5hwlib7wait_usEi
  .text._ZN5hwlib7wait_msEi
-                0x00000208       0x16 MAXimus.o
-                0x00000208                _ZN5hwlib7wait_msEi
- *fill*         0x0000021e        0x2 
- .text._ZN5hwlib9uart_putcEc
-                0x00000220       0x40 MAXimus.o
-                0x00000220                _ZN5hwlib9uart_putcEc
- .text._ZN7MAXimusC2EN3due7pin_outES1_S1_
-                0x00000260       0x38 MAXimus.o
-                0x00000260                _ZN7MAXimusC1EN3due7pin_outES1_S1_
-                0x00000260                _ZN7MAXimusC2EN3due7pin_outES1_S1_
- .text._ZN7MAXimus10clockPulseEv
-                0x00000298       0x24 MAXimus.o
-                0x00000298                _ZN7MAXimus10clockPulseEv
- .text._ZN7MAXimus14sendAdressDataEhh
-                0x000002bc       0x52 MAXimus.o
-                0x000002bc                _ZN7MAXimus14sendAdressDataEhh
- .text._ZN7MAXimus4initEv
-                0x0000030e       0x38 MAXimus.o
-                0x0000030e                _ZN7MAXimus4initEv
- .text._ZN7MAXimus13setAdressDataEhh
-                0x00000346       0x46 MAXimus.o
-                0x00000346                _ZN7MAXimus13setAdressDataEhh
- .text._ZN7MAXimus3setERK10coordinate
-                0x0000038c       0x32 MAXimus.o
-                0x0000038c                _ZN7MAXimus3setERK10coordinate
- .text._ZN7MAXimus6updateEv
-                0x000003be       0x3c MAXimus.o
-                0x000003be                _ZN7MAXimus6updateEv
- .text._ZN7MAXimus5cleanEv
-                0x000003fa       0x5c MAXimus.o
-                0x000003fa                _ZN7MAXimus5cleanEv
- .text._ZN5hwlib7ostream5flushEv
-                0x00000456        0x2 hwlib.o
-                0x00000456                _ZN5hwlib7ostream5flushEv
+                0x000000c8       0x16 display.o
+                0x000000c8                _ZN5hwlib7wait_msEi
+ *fill*         0x000000de        0x2 
+ .text._ZN7displayC2EN3due7pin_outES1_S1_
+                0x000000e0       0x38 display.o
+                0x000000e0                _ZN7displayC1EN3due7pin_outES1_S1_
+                0x000000e0                _ZN7displayC2EN3due7pin_outES1_S1_
+ .text._ZN7display10clockPulseEv
+                0x00000118       0x24 display.o
+                0x00000118                _ZN7display10clockPulseEv
+ .text._ZN7display14sendAdressDataEhh
+                0x0000013c       0x52 display.o
+                0x0000013c                _ZN7display14sendAdressDataEhh
+ .text._ZN7display4initEv
+                0x0000018e       0x2e display.o
+                0x0000018e                _ZN7display4initEv
+ .text._ZN7display13setBrightnessEh
+                0x000001bc       0x9c display.o
+                0x000001bc                _ZN7display13setBrightnessEh
+ .text._ZN7display5cleanEv
+                0x00000258       0x1e display.o
+                0x00000258                _ZN7display5cleanEv
  .text._ZN5hwlib5panicEPKcj
-                0x00000458        0x2 hwlib.o
-                0x00000458                _ZN5hwlib5panicEPKcj
- .text._ZN5hwlib24uart_putc_bit_banged_pinEcRNS_7pin_outE
-                0x0000045a       0x64 hwlib.o
-                0x0000045a                _ZN5hwlib24uart_putc_bit_banged_pinEcRNS_7pin_outE
- .text._ZN5hwlib20cout_using_uart_putc4putcEc
-                0x000004be        0xa hwlib.o
-                0x000004be                _ZN5hwlib20cout_using_uart_putc4putcEc
+                0x00000276        0x2 hwlib.o
+                0x00000276                _ZN5hwlib5panicEPKcj
  .text._ZN3due7pin_outC2ENS_4pinsE
-                0x000004c8       0x34 main.o
-                0x000004c8                _ZN3due7pin_outC2ENS_4pinsE
-                0x000004c8                _ZN3due7pin_outC1ENS_4pinsE
- .text._ZN10coordinateC2Ehh
-                0x000004fc       0x54 main.o
-                0x000004fc                _ZN10coordinateC2Ehh
-                0x000004fc                _ZN10coordinateC1Ehh
- .text.abs      0x00000550       0x10 main.o
-                0x00000550                abs
- .text._ZN6shapes4lineE10coordinateS0_
-                0x00000560       0xfe main.o
-                0x00000560                _ZN6shapes4lineE10coordinateS0_
- *fill*         0x0000065e        0x2 
+                0x00000278       0x34 main.o
+                0x00000278                _ZN3due7pin_outC2ENS_4pinsE
+                0x00000278                _ZN3due7pin_outC1ENS_4pinsE
  .text.startup.main
-                0x00000660       0xe4 main.o
-                0x00000660                main
+                0x000002ac       0x7c main.o
+                0x000002ac                main
  .text.__startup
-                0x00000744       0x48 bmptk_cortex.o
-                0x00000744                __startup
- .text          0x0000078c       0x9c c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/6.2.0/../../../../arm-eabi/lib/thumb/cortex_m3\libc.a(lib_a-memset.o)
-                0x0000078c                memset
-                0x00000828                . = ALIGN (0x4)
+                0x00000328       0x48 bmptk_cortex.o
+                0x00000328                __startup
+ .text          0x00000370       0x9c c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/6.2.0/../../../../arm-eabi/lib/thumb/cortex_m3\libc.a(lib_a-memset.o)
+                0x00000370                memset
+                0x0000040c                . = ALIGN (0x4)
  *(.glue_7t .glue_7)
- .glue_7        0x00000828        0x0 linker stubs
- .glue_7t       0x00000828        0x0 linker stubs
-                0x00000828                . = ALIGN (0x4)
+ .glue_7        0x0000040c        0x0 linker stubs
+ .glue_7t       0x0000040c        0x0 linker stubs
+                0x0000040c                . = ALIGN (0x4)
  *(.rodata .rodata.* .gnu.linkonce.r.*)
  .rodata._ZTVN3due7pin_outE
-                0x00000828       0x10 MAXimus.o
-                0x00000828                _ZTVN3due7pin_outE
+                0x0000040c       0x10 display.o
+                0x0000040c                _ZTVN3due7pin_outE
  .rodata._ZN3due8pin_infoENS_4pinsE.str1.1
-                0x00000838       0x33 MAXimus.o
+                0x0000041c       0x33 display.o
  .rodata._ZZN3due8pin_infoENS_4pinsEE14pin_info_array
-                0x0000086b       0xa4 MAXimus.o
- *fill*         0x0000090f        0x1 
- .rodata._ZTVN5hwlib20cout_using_uart_putcE
-                0x00000910       0x10 hwlib.o
-                0x00000910                _ZTVN5hwlib20cout_using_uart_putcE
- .rodata._ZN10coordinateC2Ehh.str1.1
-                0x00000920       0x63 main.o
-                0x00000984                . = ALIGN (0x4)
- *fill*         0x00000983        0x1 
+                0x0000044f       0xa4 display.o
+                0x000004f4                . = ALIGN (0x4)
+ *fill*         0x000004f3        0x1 
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x00000984                . = ALIGN (0x4)
+                0x000004f4                . = ALIGN (0x4)
  *(.gcc_except_table)
-                0x00000984                . = ALIGN (0x4)
+                0x000004f4                . = ALIGN (0x4)
  *(.eh_frame_hdr)
-                0x00000984                . = ALIGN (0x4)
+                0x000004f4                . = ALIGN (0x4)
  *(.eh_frame)
-                0x00000984                . = ALIGN (0x4)
-                0x00000984                __text_end = .
+                0x000004f4                . = ALIGN (0x4)
+                0x000004f4                __text_end = .
                 [!provide]                PROVIDE (__text_end, __text_end)
 
-.vfp11_veneer   0x00000984        0x0
- .vfp11_veneer  0x00000984        0x0 linker stubs
+.vfp11_veneer   0x000004f4        0x0
+ .vfp11_veneer  0x000004f4        0x0 linker stubs
 
-.v4_bx          0x00000984        0x0
- .v4_bx         0x00000984        0x0 linker stubs
+.v4_bx          0x000004f4        0x0
+ .v4_bx         0x000004f4        0x0 linker stubs
 
-.iplt           0x00000984        0x0
- .iplt          0x00000984        0x0 MAXimus.o
+.iplt           0x000004f4        0x0
+ .iplt          0x000004f4        0x0 display.o
 
-.rel.dyn        0x00000984        0x0
- .rel.iplt      0x00000984        0x0 MAXimus.o
+.rel.dyn        0x000004f4        0x0
+ .rel.iplt      0x000004f4        0x0 display.o
 
 .IF_YOU_SEE_THIS_YOU_HAVE_ONE_OR_MORE_GLOBAL_OBJECT_CONSTRUCTORS
  *(.init)
  *(.preinit_array)
  *(SORT(.init_array.*))
  *(.init_array)
-                0x00000984                . = ALIGN (0x4)
-                0x00000984                __exidx_start = .
+                0x000004f4                . = ALIGN (0x4)
+                0x000004f4                __exidx_start = .
                 [!provide]                PROVIDE (__exidx_start, __exidx_start)
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x00000984                . = ALIGN (0x4)
-                0x00000984                __exidx_end = .
+                0x000004f4                . = ALIGN (0x4)
+                0x000004f4                __exidx_end = .
                 [!provide]                PROVIDE (__exidx_end, __exidx_end)
 
-.bss            0x20000000    0x12010
+.bss            0x20000000    0x12000
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                __stack_start = .
                 [!provide]                PROVIDE (__stack_start, __stack_start)
@@ -636,42 +649,35 @@ END GROUP
                 [!provide]                PROVIDE (__bss_start, __bss_start)
                 0x20012000                . = ALIGN (0x4)
  *(.bss .bss.* .gnu.linkonce.b.*)
- .bss._ZGVZN5hwlib9uart_putcEcE3pin
-                0x20012000        0x4 MAXimus.o
- .bss._ZZN5hwlib9uart_putcEcE3pin
-                0x20012004        0xc MAXimus.o
-                0x20012010                . = ALIGN (0x4)
+                0x20012000                . = ALIGN (0x4)
  *(COMMON)
-                0x20012010                . = ALIGN (0x4)
-                0x20012010                __bss_end = .
+                0x20012000                . = ALIGN (0x4)
+                0x20012000                __bss_end = .
                 [!provide]                PROVIDE (__bss_end, __bss_end)
 
-.data           0x20012010       0x14 load address 0x00000984
-                0x20012010                . = ALIGN (0x4)
-                0x00000984                __data_init_start = LOADADDR (.data)
+.data           0x20012000        0x0 load address 0x000004f4
+                0x20012000                . = ALIGN (0x4)
+                0x000004f4                __data_init_start = LOADADDR (.data)
                 [!provide]                PROVIDE (__data_init_start, __data_init_start)
-                0x20012010                __data_start = .
+                0x20012000                __data_start = .
                 [!provide]                PROVIDE (__data_start, __data_start)
-                0x20012010                . = ALIGN (0x4)
+                0x20012000                . = ALIGN (0x4)
  *(.data .data.* .gnu.linkonce.d.*)
- .data._ZN5hwlib4coutE
-                0x20012010       0x14 hwlib.o
-                0x20012010                _ZN5hwlib4coutE
-                0x20012024                . = ALIGN (0x4)
-                0x20012024                __data_end = .
+                0x20012000                . = ALIGN (0x4)
+                0x20012000                __data_end = .
                 [!provide]                PROVIDE (__data_end, __data_end)
-                0x00000984                __data_init_end = LOADADDR (.data)
+                0x000004f4                __data_init_end = LOADADDR (.data)
                 [!provide]                PROVIDE (__data_init_end, __data_init_end)
-                0x00000014                PROVIDE (__data_size, (__data_end - __data_start))
-                0x00000014                PROVIDE (__data_init_size, __data_size)
+                0x00000000                PROVIDE (__data_size, (__data_end - __data_start))
+                0x00000000                PROVIDE (__data_init_size, __data_size)
                 [!provide]                PROVIDE (__data_init_end, (__data_init_start + __data_init_size))
 
-.igot.plt       0x20012024        0x0 load address 0x00000998
- .igot.plt      0x20012024        0x0 MAXimus.o
-                0x20012024                . = ALIGN (0x4)
-                0x20012024                __heap_start = .
+.igot.plt       0x20012000        0x0 load address 0x000004f4
+ .igot.plt      0x20012000        0x0 display.o
+                0x20012000                . = ALIGN (0x4)
+                0x20012000                __heap_start = .
                 [!provide]                PROVIDE (__heap_start, __heap_start)
-                0x20012024                . = ALIGN (0x4)
+                0x20012000                . = ALIGN (0x4)
                 0x20018000                __heap_end = __ram_end
                 [!provide]                PROVIDE (__heap_end, __heap_end)
 
@@ -777,7 +783,7 @@ END GROUP
  .debug_loc     0x00000db9      0x1bd c:/sysgcc/arm-eabi/bin/../lib/gcc/arm-eabi/6.2.0/../../../../arm-eabi/lib/thumb/cortex_m3\libc.a(lib_a-memset.o)
 
 .comment        0x00000000       0x11
- .comment       0x00000000       0x11 MAXimus.o
+ .comment       0x00000000       0x11 display.o
                                  0x12 (size before relaxing)
  .comment       0x00000011       0x12 hwlib.o
  .comment       0x00000011       0x12 main.o
@@ -809,7 +815,7 @@ END GROUP
                 0x00000000       0x33
  *(.ARM.attributes)
  .ARM.attributes
-                0x00000000       0x33 MAXimus.o
+                0x00000000       0x33 display.o
  .ARM.attributes
                 0x00000033       0x33 hwlib.o
  .ARM.attributes

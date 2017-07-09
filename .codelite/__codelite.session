@@ -1,8 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Session Name="C:\Users\Niekg\stack\HU\BLOK 4\IPASS\MAX7219\__codelite.workspace">
-  <int Value="0" Name="m_selectedTab"/>
+  <int Value="5" Name="m_selectedTab"/>
   <wxString Value="C:\Users\Niekg\stack\HU\BLOK 4\IPASS\MAX7219\__codelite.workspace" Name="m_workspaceName"/>
-  <TabInfoArray Name="TabInfoArray"/>
+  <TabInfoArray Name="TabInfoArray">
+    <TabInfo>
+      <wxString Value="C:\Users\Niekg\stack\HU\BLOK 4\IPASS\MAX7219\MAX7219\fonts.hpp" Name="FileName"/>
+      <int Value="55" Name="FirstVisibleLine"/>
+      <int Value="26" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Niekg\stack\HU\BLOK 4\IPASS\MAX7219\MAX7219\main.cpp" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="24" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Niekg\stack\HU\BLOK 4\IPASS\MAX7219\MAX7219\examples.hpp" Name="FileName"/>
+      <int Value="157" Name="FirstVisibleLine"/>
+      <int Value="179" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Niekg\stack\HU\BLOK 4\IPASS\MAX7219\MAX7219\display.hpp" Name="FileName"/>
+      <int Value="47" Name="FirstVisibleLine"/>
+      <int Value="70" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Niekg\stack\HU\BLOK 4\IPASS\MAX7219\MAX7219\display.cpp" Name="FileName"/>
+      <int Value="355" Name="FirstVisibleLine"/>
+      <int Value="379" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Niekg\stack\HU\BLOK 4\IPASS\MAX7219\MAX7219\shapes.hpp" Name="FileName"/>
+      <int Value="170" Name="FirstVisibleLine"/>
+      <int Value="193" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Niekg\stack\HU\BLOK 4\IPASS\MAX7219\MAX7219\math.hpp" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="15" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Niekg\stack\HU\BLOK 4\IPASS\MAX7219\MAX7219\coordinate.hpp" Name="FileName"/>
+      <int Value="98" Name="FirstVisibleLine"/>
+      <int Value="116" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Niekg\stack\HU\BLOK 4\IPASS\MAX7219\MAX7219\MAXimus.hpp" Name="FileName"/>
+      <int Value="31" Name="FirstVisibleLine"/>
+      <int Value="27" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Niekg\stack\HU\BLOK 4\IPASS\MAX7219\MAX7219\settings.hpp" Name="FileName"/>
+      <int Value="22" Name="FirstVisibleLine"/>
+      <int Value="27" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Niekg\stack\HU\BLOK 4\IPASS\MAX7219\MAX7219\static_address.hpp" Name="FileName"/>
+      <int Value="60" Name="FirstVisibleLine"/>
+      <int Value="27" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+  </TabInfoArray>
   <SerializedObject Name="m_breakpoints">
     <long Value="0" Name="Count"/>
   </SerializedObject>

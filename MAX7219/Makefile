@@ -9,9 +9,9 @@
 #############################################################################
 
 # source files in this project (main.cpp is automatically assumed)
-SOURCES := MAXimus.cpp
+SOURCES := display.cpp
 # header files in this project
-HEADERS := MAXimus.hpp static_address.hpp coordinate.hpp settings.hpp shapes.hpp math.hpp
+HEADERS := display.hpp static_address.hpp coordinate.hpp settings.hpp shapes.hpp math.hpp MAXimus.hpp examples.hpp fonts.hpp
 
 # other places to look for files for this project
 SEARCH  := 
