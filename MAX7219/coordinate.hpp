@@ -14,7 +14,7 @@ public:
         if( x > DISPLAY_WIDTH ){hwlib::cout << "ERROR: coordinate x value is out of range. " << x-DISPLAY_WIDTH << " too big.\n";}
         if( y > DISPLAY_HEIGHT ){hwlib::cout << "ERROR: coordinate y value is out of range. " << y-DISPLAY_HEIGHT << " too big.\n";}
     }
-    
+   
     coordinate & operator=(const coordinate & rhs){
         x=rhs.x;
         y=rhs.y;

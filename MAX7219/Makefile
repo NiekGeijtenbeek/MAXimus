@@ -11,7 +11,7 @@
 # source files in this project (main.cpp is automatically assumed)
 SOURCES := MAXimus.cpp
 # header files in this project
-HEADERS := MAXimus.hpp static_address.hpp coordinate.hpp settings.hpp shapes.hpp
+HEADERS := MAXimus.hpp static_address.hpp coordinate.hpp settings.hpp shapes.hpp math.hpp
 
 # other places to look for files for this project
 SEARCH  := 

@@ -2,6 +2,11 @@
 #include "MAXimus.hpp"
 #include "static_address.hpp"
 #include "coordinate.hpp"
+#include "shapes.hpp"
+
+//  for (int i = 1; i <= 8; i++){
+//     s.superKitt(coordinate (1 , i), coordinate( 1, i), 1, 1);
+//  }
 
 int main(void){
     // kill the watchdog
@@ -12,19 +17,24 @@ int main(void){
     auto din = hwlib::target::pin_out(hwlib::target::pins::d13);
 	
 	hwlib::wait_ms(1000);
-   MAXimus test( cs, clk, din);
+   MAXimus w( cs, clk, din);
     
-   test.init();
-	test.clean();
+   w.init();
+	w.clean();
    
-   coordinate arsalan (3,3);
-   arsalan = (3,3);
+   shapes s(w);
+   coordinate start  (1,1);
+   coordinate end  (1,4);
+//     for (int i = 1; i <= 8; i++){
+//     s.superKitt(coordinate (1 , i), coordinate( 1, i), 1, 1);
+// }
 
-   test.update();
-   test.printFrame();
-   
-   
-   test.update();
+//   s.circle(coordinate(5,5), 3);
+//   s.rectangle(coordinate(9,1), coordinate(16,8));
+   s.triangle(coordinate(16,1), 8, 8);
+   w.update();
+
+  
    
    
 }

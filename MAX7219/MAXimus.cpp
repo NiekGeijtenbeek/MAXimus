@@ -133,13 +133,7 @@ void MAXimus::printFrame(){
     }
 }
 
-void MAXimus::superKitt(){
-    for( int x=1; x<=8; ++x ){
-        for ( int y=1; y<=8; ++y ){
-            set( coordinate( x,y ) );
-        }
-    }
-}
+
 
 void MAXimus::clean(){
     for ( int i = 0; i < 4; i++ ) {
@@ -152,4 +146,12 @@ void MAXimus::clean(){
         sendAdressData( 0x07, 0x00 );
         sendAdressData( 0x08, 0x00 );
     }
+}
+
+void MAXimus::resetMatrix(){
+   for ( int i = 0; i < DISPLAY_HEIGHT; i++) {
+      for (int j = 0; j < (DISPLAY_WIDTH/DISPLAY_HEIGHT); j++) {
+         matrix[i][j] = 0x00;
+      }
+   }
 }

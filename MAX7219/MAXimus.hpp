@@ -13,7 +13,7 @@ private:
     hwlib::target::pin_out din;
 public:
     MAXimus( hwlib::target::pin_out cs, hwlib::target::pin_out clk, hwlib::target::pin_out din);
-
+   
 	int matrix[DISPLAY_HEIGHT][DISPLAY_WIDTH/DISPLAY_HEIGHT] = {{0x00}};
 	void init(); 
 	void clockPulse();
@@ -23,10 +23,9 @@ public:
     void setAdressData( uint8_t adress, uint8_t data );
 	void set(const coordinate & pos);
 	void update();
-    void superKitt();
-    void printFrame();
+   void printFrame();
 	void clean();
-          
+   void resetMatrix();       
 }; 
 
 #endif //MAXIMUS_HPP 
