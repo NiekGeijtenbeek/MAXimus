@@ -1,0 +1,311 @@
+\hypertarget{classdisplay}{}\section{display Class Reference}
+\label{classdisplay}\index{display@{display}}
+
+
+{\ttfamily \#include $<$display.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classdisplay_ac255c97163cd08cc4e6d7a4beeff2b76}{display} (hwlib\+::target\+::pin\+\_\+out cs, hwlib\+::target\+::pin\+\_\+out clk, hwlib\+::target\+::pin\+\_\+out din)
+\begin{DoxyCompactList}\small\item\em This is the constructor display driver. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classdisplay_aa0b94eb3cb43b47dc720542cf7d1da9b}\label{classdisplay_aa0b94eb3cb43b47dc720542cf7d1da9b}} 
+void \hyperlink{classdisplay_aa0b94eb3cb43b47dc720542cf7d1da9b}{init} ()
+\begin{DoxyCompactList}\small\item\em Function that initializes some hardware settings of the diplay. \end{DoxyCompactList}\item 
+void \hyperlink{classdisplay_aca4c200063dafafec86cc12d3ca6f2ad}{set\+Brightness} (uint8\+\_\+t lvl)
+\begin{DoxyCompactList}\small\item\em Function that needs to be used to set the intensity level. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classdisplay_a29bf14b0d1dc4d1d5bdd9df63fae3026}\label{classdisplay_a29bf14b0d1dc4d1d5bdd9df63fae3026}} 
+void \hyperlink{classdisplay_a29bf14b0d1dc4d1d5bdd9df63fae3026}{clock\+Pulse} ()
+\begin{DoxyCompactList}\small\item\em Function that send a clockpulse by toggling the clk pin. \end{DoxyCompactList}\item 
+void \hyperlink{classdisplay_afa66bcce0d701ae771b733bf0d3f9caf}{select\+Adress} (uint8\+\_\+t adress)
+\begin{DoxyCompactList}\small\item\em Function that can be used to select an adress. \end{DoxyCompactList}\item 
+void \hyperlink{classdisplay_afaec31b348110cd7f81ff690dc70b5a9}{send\+Data} (uint8\+\_\+t data)
+\begin{DoxyCompactList}\small\item\em Function that can be used to send data to an adress. \end{DoxyCompactList}\item 
+void \hyperlink{classdisplay_a261f1f8f23a0e7d341df5104de842e8e}{send\+Adress\+Data} (uint8\+\_\+t adress, uint8\+\_\+t data)
+\begin{DoxyCompactList}\small\item\em Function that sends data to a specific adress once. \end{DoxyCompactList}\item 
+void \hyperlink{classdisplay_a0c59879dfb0edeeca81c34d23cdde404}{set\+Adress\+Data} (uint8\+\_\+t adress, uint8\+\_\+t data)
+\begin{DoxyCompactList}\small\item\em Function that sends data to specific adress until the cs pin is set low. \end{DoxyCompactList}\item 
+void \hyperlink{classdisplay_a3703b7e40fdcabbd0172f83f97b3e266}{set} (const \hyperlink{classcoordinate}{coordinate} \&pos)
+\begin{DoxyCompactList}\small\item\em Function that will convert a (x,y) pixel coordinate to byte values which will be stored in the 2d matrix buffer. \end{DoxyCompactList}\item 
+void \hyperlink{classdisplay_aca1bd1091510f20061868d1f6c5a8500}{draw} (const \hyperlink{classcoordinate}{coordinate} \&pos)
+\begin{DoxyCompactList}\small\item\em Function that will convert a (x,y) pixel coordinate to byte values which will be stored in the 2d matrix buffer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classdisplay_a9bdf1736088cacf0d4ecb26a9784eb7b}\label{classdisplay_a9bdf1736088cacf0d4ecb26a9784eb7b}} 
+void \hyperlink{classdisplay_a9bdf1736088cacf0d4ecb26a9784eb7b}{update} ()
+\begin{DoxyCompactList}\small\item\em Function that updates the content of the buffer on the display with the content of the 2d matrix buffer. \end{DoxyCompactList}\item 
+void \hyperlink{classdisplay_a7edc22f6e40da7e6693adff3d3529ad5}{print\+Frame} ()
+\begin{DoxyCompactList}\small\item\em Function that can be used for debuggin purposes. \end{DoxyCompactList}\item 
+void \hyperlink{classdisplay_aaf0e302754aace767ead8e68e84c783d}{clean} ()
+\begin{DoxyCompactList}\small\item\em Function that clears the data of the display buffer. \end{DoxyCompactList}\item 
+void \hyperlink{classdisplay_a48631fda3500f5550203ddd15e0d539b}{reset\+Matrix} ()
+\begin{DoxyCompactList}\small\item\em Function that clear the data of the 2d matrix buffer. \end{DoxyCompactList}\item 
+void \hyperlink{classdisplay_a9f061002061eaea0f092f782c7f23d24}{draw\+Matrix} (const int field\mbox{[}$\,$\mbox{]}, int size, int display\+Nr)
+\begin{DoxyCompactList}\small\item\em Function that translates a userdefined 8x8 matrix (array of 8 elements) to byte data for the 2d matrix buffer. \end{DoxyCompactList}\item 
+void \hyperlink{classdisplay_af50dd224f30fb8aaaec36b0be1d260c8}{draw\+Animation} (const int field\mbox{[}A\+N\+I\+M\+A\+T\+I\+O\+N\+\_\+\+L\+I\+M\+IT\mbox{]}\mbox{[}8\mbox{]}, int frames, int times, int delay, int display\+Nr, bool repeat)
+\begin{DoxyCompactList}\small\item\em Function that translates a set of userdefined 8x8 matrix frames (array of array of 8 elements) to byte data for the 2d matrix buffer. \end{DoxyCompactList}\item 
+void \hyperlink{classdisplay_a650113fb337e86cf356f412e16973b04}{draw\+Text} (char text\mbox{[}5\mbox{]})
+\begin{DoxyCompactList}\small\item\em Function that translates a 4 character string to text on the display. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classdisplay_a7577a542a26a85ebf47e012d8b45070b}{matrix} \mbox{[}D\+I\+S\+P\+L\+A\+Y\+\_\+\+H\+E\+I\+G\+HT\mbox{]}\mbox{[}D\+I\+S\+P\+L\+A\+Y\+\_\+\+W\+I\+D\+TH/D\+I\+S\+P\+L\+A\+Y\+\_\+\+H\+E\+I\+G\+HT\mbox{]} = \{\{0x00\}\}
+\begin{DoxyCompactList}\small\item\em This 2D matrix array is used as temprary buffer to store data of the location of pixels that needs to be turned on or off. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Niek Geijtenbeek 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/07/2017 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classdisplay_ac255c97163cd08cc4e6d7a4beeff2b76}\label{classdisplay_ac255c97163cd08cc4e6d7a4beeff2b76}} 
+\index{display@{display}!display@{display}}
+\index{display@{display}!display@{display}}
+\subsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily display\+::display (\begin{DoxyParamCaption}\item[{hwlib\+::target\+::pin\+\_\+out}]{cs,  }\item[{hwlib\+::target\+::pin\+\_\+out}]{clk,  }\item[{hwlib\+::target\+::pin\+\_\+out}]{din }\end{DoxyParamCaption})}
+
+
+
+This is the constructor display driver. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cs} & \+: hwlib\+::target\+::pin\+\_\+out \+: used to push content from the registers to the output \\
+\hline
+{\em clk} & \+: hwlib\+::target\+::pin\+\_\+out \+: used to send a clockpulse \\
+\hline
+{\em din} & \+: hwlib\+::target\+::pin\+\_\+out \+: used to push content to the registers (1 bit). \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classdisplay_aaf0e302754aace767ead8e68e84c783d}\label{classdisplay_aaf0e302754aace767ead8e68e84c783d}} 
+\index{display@{display}!clean@{clean}}
+\index{clean@{clean}!display@{display}}
+\subsubsection{\texorpdfstring{clean()}{clean()}}
+{\footnotesize\ttfamily void display\+::clean (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function that clears the data of the display buffer. 
+
+This is advieved by sending empty data (0x00) to all the rows of the display buffer \mbox{\Hypertarget{classdisplay_aca1bd1091510f20061868d1f6c5a8500}\label{classdisplay_aca1bd1091510f20061868d1f6c5a8500}} 
+\index{display@{display}!draw@{draw}}
+\index{draw@{draw}!display@{display}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void display\+::draw (\begin{DoxyParamCaption}\item[{const \hyperlink{classcoordinate}{coordinate} \&}]{pos }\end{DoxyParamCaption})}
+
+
+
+Function that will convert a (x,y) pixel coordinate to byte values which will be stored in the 2d matrix buffer. 
+
+After the byte of the 2d matrix array has been modified it will update the entire buffer of the display and show a pixel on the display. 
+\begin{DoxyParams}{Parameters}
+{\em pos} & \+: coordinate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+This function W\+I\+LL draw a pixel on the display. It changes the buffer. 
+\end{DoxyWarning}
+\mbox{\Hypertarget{classdisplay_af50dd224f30fb8aaaec36b0be1d260c8}\label{classdisplay_af50dd224f30fb8aaaec36b0be1d260c8}} 
+\index{display@{display}!draw\+Animation@{draw\+Animation}}
+\index{draw\+Animation@{draw\+Animation}!display@{display}}
+\subsubsection{\texorpdfstring{draw\+Animation()}{drawAnimation()}}
+{\footnotesize\ttfamily void display\+::draw\+Animation (\begin{DoxyParamCaption}\item[{const int}]{field\mbox{[}\+A\+N\+I\+M\+A\+T\+I\+O\+N\+\_\+\+L\+I\+M\+I\+T\mbox{]}\mbox{[}8\mbox{]},  }\item[{int}]{frames,  }\item[{int}]{times,  }\item[{int}]{delay,  }\item[{int}]{display\+Nr,  }\item[{bool}]{repeat }\end{DoxyParamCaption})}
+
+
+
+Function that translates a set of userdefined 8x8 matrix frames (array of array of 8 elements) to byte data for the 2d matrix buffer. 
+
+This function can animate up to a certain animation limit (which can be changed in \hyperlink{settings_8hpp_source}{settings.\+hpp}). ~\newline
+The amount of frames need to be specified, because c++14 does not allow the retrival of the size of an 2d array inside a function. 
+\begin{DoxyParams}{Parameters}
+{\em field} & \+: 2d int array \+: used to store the frames \\
+\hline
+{\em frames} & \+: int \+: The amount of frames used. \\
+\hline
+{\em times} & \+: int \+: The amount of time the animation has to loop. If repeat is true, set this to 0. \\
+\hline
+{\em delay} & \+: int\+: The interval between frames \\
+\hline
+{\em display\+Nr} & int \+: The number of the display that the user wants to draw the 8x8 object. \\
+\hline
+{\em repeat} & \+: bool \+: Mode to repeat infinitly or to repeat a certain n amount of times \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classdisplay_a9f061002061eaea0f092f782c7f23d24}\label{classdisplay_a9f061002061eaea0f092f782c7f23d24}} 
+\index{display@{display}!draw\+Matrix@{draw\+Matrix}}
+\index{draw\+Matrix@{draw\+Matrix}!display@{display}}
+\subsubsection{\texorpdfstring{draw\+Matrix()}{drawMatrix()}}
+{\footnotesize\ttfamily void display\+::draw\+Matrix (\begin{DoxyParamCaption}\item[{const int}]{field\mbox{[}$\,$\mbox{]},  }\item[{int}]{size,  }\item[{int}]{display\+Nr }\end{DoxyParamCaption})}
+
+
+
+Function that translates a userdefined 8x8 matrix (array of 8 elements) to byte data for the 2d matrix buffer. 
+
+A parameter size needs to be given, because c++14 does not allow the retrival of the size of an array inside a function. 
+\begin{DoxyParams}{Parameters}
+{\em field} & \+: int arrray \\
+\hline
+{\em size} & \+: int \+: size of the array \\
+\hline
+{\em display\+Nr} & \+: int \+: The number of the display that the user wants to draw the 8x8 object. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classdisplay_a650113fb337e86cf356f412e16973b04}\label{classdisplay_a650113fb337e86cf356f412e16973b04}} 
+\index{display@{display}!draw\+Text@{draw\+Text}}
+\index{draw\+Text@{draw\+Text}!display@{display}}
+\subsubsection{\texorpdfstring{draw\+Text()}{drawText()}}
+{\footnotesize\ttfamily void display\+::draw\+Text (\begin{DoxyParamCaption}\item[{char}]{text\mbox{[}5\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Function that translates a 4 character string to text on the display. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & \+: char array \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classdisplay_a7edc22f6e40da7e6693adff3d3529ad5}\label{classdisplay_a7edc22f6e40da7e6693adff3d3529ad5}} 
+\index{display@{display}!print\+Frame@{print\+Frame}}
+\index{print\+Frame@{print\+Frame}!display@{display}}
+\subsubsection{\texorpdfstring{print\+Frame()}{printFrame()}}
+{\footnotesize\ttfamily void display\+::print\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function that can be used for debuggin purposes. 
+
+This function will print out the content of the 2d matrix array on the console. \mbox{\Hypertarget{classdisplay_a48631fda3500f5550203ddd15e0d539b}\label{classdisplay_a48631fda3500f5550203ddd15e0d539b}} 
+\index{display@{display}!reset\+Matrix@{reset\+Matrix}}
+\index{reset\+Matrix@{reset\+Matrix}!display@{display}}
+\subsubsection{\texorpdfstring{reset\+Matrix()}{resetMatrix()}}
+{\footnotesize\ttfamily void display\+::reset\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function that clear the data of the 2d matrix buffer. 
+
+This is advieved by sending empty data (0x00) to all the rows of the 2d matrix buffer \mbox{\Hypertarget{classdisplay_afa66bcce0d701ae771b733bf0d3f9caf}\label{classdisplay_afa66bcce0d701ae771b733bf0d3f9caf}} 
+\index{display@{display}!select\+Adress@{select\+Adress}}
+\index{select\+Adress@{select\+Adress}!display@{display}}
+\subsubsection{\texorpdfstring{select\+Adress()}{selectAdress()}}
+{\footnotesize\ttfamily void display\+::select\+Adress (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{adress }\end{DoxyParamCaption})}
+
+
+
+Function that can be used to select an adress. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em adress} & \+: uint8\+\_\+t \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classdisplay_a261f1f8f23a0e7d341df5104de842e8e}\label{classdisplay_a261f1f8f23a0e7d341df5104de842e8e}} 
+\index{display@{display}!send\+Adress\+Data@{send\+Adress\+Data}}
+\index{send\+Adress\+Data@{send\+Adress\+Data}!display@{display}}
+\subsubsection{\texorpdfstring{send\+Adress\+Data()}{sendAdressData()}}
+{\footnotesize\ttfamily void display\+::send\+Adress\+Data (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{adress,  }\item[{uint8\+\_\+t}]{data }\end{DoxyParamCaption})}
+
+
+
+Function that sends data to a specific adress once. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em adress} & \+: uint8\+\_\+t \\
+\hline
+{\em data} & \+: uint8\+\_\+t \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classdisplay_afaec31b348110cd7f81ff690dc70b5a9}\label{classdisplay_afaec31b348110cd7f81ff690dc70b5a9}} 
+\index{display@{display}!send\+Data@{send\+Data}}
+\index{send\+Data@{send\+Data}!display@{display}}
+\subsubsection{\texorpdfstring{send\+Data()}{sendData()}}
+{\footnotesize\ttfamily void display\+::send\+Data (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{data }\end{DoxyParamCaption})}
+
+
+
+Function that can be used to send data to an adress. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & \+: uint8\+\_\+t \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classdisplay_a3703b7e40fdcabbd0172f83f97b3e266}\label{classdisplay_a3703b7e40fdcabbd0172f83f97b3e266}} 
+\index{display@{display}!set@{set}}
+\index{set@{set}!display@{display}}
+\subsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily void display\+::set (\begin{DoxyParamCaption}\item[{const \hyperlink{classcoordinate}{coordinate} \&}]{pos }\end{DoxyParamCaption})}
+
+
+
+Function that will convert a (x,y) pixel coordinate to byte values which will be stored in the 2d matrix buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & \+: coordinate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+This function W\+I\+LL N\+OT draw a pixel on the display. It only changes the buffer. 
+\end{DoxyWarning}
+\mbox{\Hypertarget{classdisplay_a0c59879dfb0edeeca81c34d23cdde404}\label{classdisplay_a0c59879dfb0edeeca81c34d23cdde404}} 
+\index{display@{display}!set\+Adress\+Data@{set\+Adress\+Data}}
+\index{set\+Adress\+Data@{set\+Adress\+Data}!display@{display}}
+\subsubsection{\texorpdfstring{set\+Adress\+Data()}{setAdressData()}}
+{\footnotesize\ttfamily void display\+::set\+Adress\+Data (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{adress,  }\item[{uint8\+\_\+t}]{data }\end{DoxyParamCaption})}
+
+
+
+Function that sends data to specific adress until the cs pin is set low. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em adress} & \+: uint8\+\_\+t \\
+\hline
+{\em data} & \+: uint8\+\_\+t \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classdisplay_aca4c200063dafafec86cc12d3ca6f2ad}\label{classdisplay_aca4c200063dafafec86cc12d3ca6f2ad}} 
+\index{display@{display}!set\+Brightness@{set\+Brightness}}
+\index{set\+Brightness@{set\+Brightness}!display@{display}}
+\subsubsection{\texorpdfstring{set\+Brightness()}{setBrightness()}}
+{\footnotesize\ttfamily void display\+::set\+Brightness (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{lvl }\end{DoxyParamCaption})}
+
+
+
+Function that needs to be used to set the intensity level. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lvl} & \+: uint8\+\_\+t \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classdisplay_a7577a542a26a85ebf47e012d8b45070b}\label{classdisplay_a7577a542a26a85ebf47e012d8b45070b}} 
+\index{display@{display}!matrix@{matrix}}
+\index{matrix@{matrix}!display@{display}}
+\subsubsection{\texorpdfstring{matrix}{matrix}}
+{\footnotesize\ttfamily int display\+::matrix\mbox{[}D\+I\+S\+P\+L\+A\+Y\+\_\+\+H\+E\+I\+G\+HT\mbox{]}\mbox{[}D\+I\+S\+P\+L\+A\+Y\+\_\+\+W\+I\+D\+TH/D\+I\+S\+P\+L\+A\+Y\+\_\+\+H\+E\+I\+G\+HT\mbox{]} = \{\{0x00\}\}}
+
+
+
+This 2D matrix array is used as temprary buffer to store data of the location of pixels that needs to be turned on or off. 
+
+Lets asume you have 4 8x8 display in a row, you want to turn on the 12th pixel of row 5, than the second byte need to look like this 00001000 (0x08). ~\newline
+The entire second colom of the 5th row of the matrix, will look like this\+: 0x00 0x08 0x00 0x00. ~\newline
+The second colom of the array has n (total width/height of one 8x8) rows where each byte represends one 8x8 display row. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{display_8hpp}{display.\+hpp}\item 
+display.\+cpp\end{DoxyCompactItemize}

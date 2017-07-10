@@ -44,20 +44,39 @@
 #include "static_address.hpp"
 #include "fonts.hpp"
 
+/**
+ * @class examples
+ * @author Niek Geijtenbeek
+ * @date 10/07/2017
+ * @file examples.hpp
+ * @brief class to showcase some examples of the functionality of the MAXimus library.
+ 
+ */
 class examples{
 private:     
     display w;
     shapes s;
 public:
+    /**
+     * @brief Constructor for the examples class
+     * @param w : display
+     */
     examples( display & w ):
         w( w ),
         s( w )
     {}
     
+    /**
+     * @brief Function that tests a userdefined coordinate being printed on the MAX7219s
+     * @param pos : coordinate
+     */
     void test1_1( const coordinate & pos ){
         w.draw(pos);
     }
     
+    /**
+     * @brief Function that tests a set of defined coordinates being printed on the MAX7219
+     */
     void test1_2(){
         w.set( coordinate( 12,7 ) );
         w.set( coordinate( 20,1 ) );
@@ -68,48 +87,85 @@ public:
         w.update();  
     }
     
+    /**
+     * @brief Function that tries to set a pixel on a coordinate that falls out of the specified window, resulting in an error being printed
+     */
     void test1_3(){
         w.set( coordinate( 255,255 ) );
         w.update();  
     }   
-    
+    /**
+     * @brief Function that showcases the "superkitt" shape using a predefined line, delay and amount of times
+     */
     void test2_1(){
         s.superKitt( coordinate( 1,1 ), coordinate( 1,8 ), 1, 25 );
     }
-    
+    /**
+     * @brief Function that showcases a modified version of the "superkitt" shape, repeating it all over the display.
+     */
     void test2_2(){
-        //TODO
+        for(int c = 1; c < DISPLAY_HEIGHT; c++ ) {
+           s.superKitt(1, c, 5, 1);
+        }
     }
-    
+    /**
+     * @brief Function that tests a line being printed on the display 
+     * @param start : coordinate
+     * @param end : coordinate
+     */
     void test3_1( coordinate start, coordinate end ){
 //        s.line(start, end);
 //        w.update();
     }
-    
+    /**
+     * @brief Function that tests a square being printed on the display
+     * @param start : coordinate
+     * @param end : coordinate
+     */
     void test3_2( coordinate start, coordinate end ){
         s.rectangle( start,end );
     }
-    
+    /**
+     * @brief Function that tests a circle being printed on the display
+     * @param midpoint : coordinate
+     * @param radius : coordinate
+     * @warning Circle can look rather strange on a small display because the low resulotion
+     */
     void test3_3( coordinate midpoint, int radius ){
         s.circle( midpoint, radius );
     }
     
+    /**
+     * @brief Function that test a triangle being printed on the display
+     * @param start : coordinate
+     * @param base : int
+     * @param height : int
+     * @warning The triangle function draws the triangle downwards
+     */
     void test3_4( coordinate start, int base, int height ){
         s.triangle( start, base, height );
     } 
-    
+    /**
+     * @brief Function that demonstrates drawing a matrix on the display (in this case a spaceinvader)
+     * @param displayNr : int
+     */
     void test4_1( int displayNr ){
         int spaceinvader_1[8] = {0x18,0x3c,0x7e,0xdb,0xff,0x24,0x5a,0xa5};
         w.drawMatrix( spaceinvader_1, 8, displayNr );
     }
-    
+    /**
+     * @brief Function that showcases the drawMatrix function on mutliple displays, using the font declared in the "fonts.hpp"
+     */
     void test4_2(){
         w.drawMatrix( N, 8, 4 );
         w.drawMatrix( I, 8, 3 );
         w.drawMatrix( E, 8, 2 );
         w.drawMatrix( K, 8, 1 );
     }
-        
+   /**
+    * @brief Function that tests the animation function, using two frames of a spaceinvader (looped)
+    * @param displayNr : int
+    */
     void test5_1( int displayNr ){
         int animation[ANIMATION_LIMIT][8] = {
             {0x18,0x3c,0x7e,0xdb,0xff,0x24,0x5a,0xa5},
@@ -119,7 +175,10 @@ public:
         w.drawAnimation( animation, 2, 0, 500, displayNr, true );
         
     }
-    
+    /**
+     * @brief Function that tests the animation function, using two frames of a spaceinvader (not looped)
+     * @param displayNr : int
+     */
     void test5_2( int displayNr ){
         int animation[ANIMATION_LIMIT][8] = {
             {0x18,0x3c,0x7e,0xdb,0xff,0x24,0x5a,0xa5},
@@ -129,17 +188,25 @@ public:
         w.drawAnimation( animation, 2, 10, 500, displayNr, false );
         
     }
-    
+    /**
+     * @brief Function that tests mutliple animations being drawn on all "matrices"
+     */
     void test5_3(  ){
         for( int i = 1; i<=4; ++i ){
             test5_2(i);
         }    
     } 
-        
+      /**
+      * @brief Function that tests the drawText with a user defined 4 letter string
+      * @param text : char array
+      */
     void test6_1( char text[4] ){
         w.drawText( text );
     }
-    
+    /**
+     * @brief Function that shows the entire defined font in "fonts.hpp" in the first display
+     * @param displayNr : int
+     */
     void test6_2( int displayNr ){
         int animation[ANIMATION_LIMIT][8] = {
             {0x66, 0x66, 0x66, 0x7e, 0x66, 0x66, 0x3c, 0x00}, //uppercaseA

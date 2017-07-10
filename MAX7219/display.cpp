@@ -209,9 +209,9 @@ void display::draw( const coordinate & pos ){
 }
 
 void display::update(){
-    for ( int y =0; y<8; ++y ){
+    for ( int y =0; y<DISPLAY_HEIGHT; ++y ){
        cs.set( 0 );
-	    for ( int x = 0; x<4; ++x ){
+	    for ( int x = 0; x<(DISPLAY_WIDTH/DISPLAY_HEIGHT); ++x ){
 		    setAdressData( y+1, matrix[y][x] );
 	    }
        cs.set( 1 );
@@ -219,8 +219,8 @@ void display::update(){
 }
 
 void display::printFrame(){
-     for ( int y =0; y<8; ++y ){
-	    for ( int x = 0; x<4; ++x ){
+     for ( int y =0; y<DISPLAY_HEIGHT; ++y ){
+	    for ( int x = 0; x<(DISPLAY_WIDTH/DISPLAY_HEIGHT); ++x ){
 		    hwlib::cout << matrix[y][x] << "\t";
 	    }
         hwlib::cout << "\n"; 
@@ -250,6 +250,7 @@ void display::drawMatrix( const int field[], int size, int displayNr ){
       }
       update();
 }
+
 
 void clearArray( int array[8] ){
    for( int i=0; i<8; ++i ){
@@ -288,7 +289,7 @@ void display::drawAnimation( const int field[ANIMATION_LIMIT][8], int frames, in
 
 void display::drawText(char text[5]){
     int x = 0;
-    for ( int i=4; i>0; --i ){
+    for ( int i=(DISPLAY_WIDTH/DISPLAY_HEIGHT); i>0; --i ){
         switch( text[x] ){
             case 'A':
                 drawMatrix( A, 8, i );

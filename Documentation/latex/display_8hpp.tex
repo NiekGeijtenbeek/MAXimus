@@ -1,0 +1,22 @@
+\hypertarget{display_8hpp}{}\section{display.\+hpp File Reference}
+\label{display_8hpp}\index{display.\+hpp@{display.\+hpp}}
+{\ttfamily \#include \char`\"{}hwlib.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}static\+\_\+address.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}coordinate.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}settings.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}fonts.\+hpp\char`\"{}}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classdisplay}{display}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A simple display driver that uses a axessystem with an inverted y-\/axis
+
+This class controls all the operations used to write and delete items on the led display. ~\newline
+A custom 2d matrix array is used to store temporary data which will be written after each update. ~\newline
+\begin{DoxyWarning}{Warning}
+Only the y-\/axis on the D\+I\+S\+P\+L\+AY is inverted. To draw pixels etc you can use a normal (x,y) axis system. 
+\end{DoxyWarning}

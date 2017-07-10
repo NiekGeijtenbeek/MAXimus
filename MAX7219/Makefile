@@ -9,14 +9,15 @@
 #############################################################################
 
 # source files in this project (main.cpp is automatically assumed)
-SOURCES := display.cpp
+SOURCES := MAXimus.cpp
+
 # header files in this project
-HEADERS := display.hpp static_address.hpp coordinate.hpp settings.hpp shapes.hpp math.hpp MAXimus.hpp examples.hpp fonts.hpp
+HEADERS := coordinate.hpp MAXimus.hpp settings.hpp static_address.hpp
 
 # other places to look for files for this project
 SEARCH  := 
 
 # set RELATIVE to the next higher directory 
-# and defer to the Makefile.* there
+# and defer to the appropriate Makefile.* there
 RELATIVE := ..
 include $(RELATIVE)/Makefile.due

@@ -19,7 +19,7 @@ int main(void){
       w.setBrightness(70);
       w.clean();
       
-//      e.test1_1(coordinate(5,5)); // single pixel
+      e.test1_1(coordinate(5,5)); // single pixel
 //      e.test1_2(); // multple pixels
 //      e.test1_3(); //error message
 //      e.test2_1(); //super kitt

@@ -36,6 +36,9 @@
 #ifndef MAXIMUS_HPP
 #define MAXIMUS_HPP
 
+/**
+ * @brief Keychain used by the MAXimus to make it easier to use the library.
+ */
 #include "coordinate.hpp"
 #include "display.hpp"
 #include "examples.hpp"

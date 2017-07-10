@@ -36,8 +36,25 @@
 #ifndef SETTINGS_HPP
 #define SETTINGS_HPP
 
+/**
+ * @page Settings
+ * @brief Headerfile that has some const variable that are used troughout the library 
+ */
+ 
+/**
+ * @brief MACRO that defines the amount of pixels of the width of the display
+ */
 const int DISPLAY_WIDTH = 32;
+
+/**
+ * @brief MACRO that defines the amount of pixels of the height of the display
+ */
 const int DISPLAY_HEIGHT = 8;
+
+/**
+ * @brief MACRO that defines the maximum amount of frames an animation can have.
+ * @ref display.hpp : drawAnimation();
+ */
 const int ANIMATION_LIMIT = 1000;
 
 #endif //SETTINGS_HPP

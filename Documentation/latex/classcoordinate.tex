@@ -1,0 +1,299 @@
+\hypertarget{classcoordinate}{}\section{coordinate Class Reference}
+\label{classcoordinate}\index{coordinate@{coordinate}}
+
+
+{\ttfamily \#include $<$coordinate.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcoordinate_a6d57bb57e6b0b6beda68f50fe9ca6f5a}{coordinate} (uint8\+\_\+t x=0, uint8\+\_\+t y=0)
+\begin{DoxyCompactList}\small\item\em This is the constructor of the A\+DT. \end{DoxyCompactList}\item 
+\hyperlink{classcoordinate}{coordinate} \& \hyperlink{classcoordinate_a2b84fb6537df4d1247ae5a85d9c47284}{operator=} (const \hyperlink{classcoordinate}{coordinate} \&rhs)
+\begin{DoxyCompactList}\small\item\em Operator that changes the orginial coordinate with the value of the rhs (right hand side) \end{DoxyCompactList}\item 
+void \hyperlink{classcoordinate_aa5d646342017b7c48ddbcd74bd48e352}{shift\+Left} (const uint8\+\_\+t \&rhs)
+\begin{DoxyCompactList}\small\item\em Function that shifts the x coordinate left by a specific number. \end{DoxyCompactList}\item 
+void \hyperlink{classcoordinate_aa723f2bf9768db3fd3874376702f2283}{shift\+Right} (const uint8\+\_\+t \&rhs)
+\begin{DoxyCompactList}\small\item\em Function that shifts the x coordinate right by a specific number. \end{DoxyCompactList}\item 
+void \hyperlink{classcoordinate_a895e556f2a260c583ae167789bf97d03}{shift\+Up} (const uint8\+\_\+t \&rhs)
+\begin{DoxyCompactList}\small\item\em Function that shifts the y coordinate down by a specific number. \end{DoxyCompactList}\item 
+void \hyperlink{classcoordinate_ae93ac2c7bceab17c68d3b4602165953b}{shift\+Down} (const uint8\+\_\+t \&rhs)
+\begin{DoxyCompactList}\small\item\em Function that shifts the y coordinate up by a specific number. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcoordinate_aa59579c4ef2f53e69329d522031ca259}\label{classcoordinate_aa59579c4ef2f53e69329d522031ca259}} 
+void \hyperlink{classcoordinate_aa59579c4ef2f53e69329d522031ca259}{invert} ()
+\begin{DoxyCompactList}\small\item\em Function that swaps the x and y values.  (x,y) -\/$>$ (y,x) \end{DoxyCompactList}\item 
+\hyperlink{classcoordinate}{coordinate} \& \hyperlink{classcoordinate_a8c842f84e51d6a8509f22a159aeed8a2}{operator+=} (const \hyperlink{classcoordinate}{coordinate} \&rhs)
+\begin{DoxyCompactList}\small\item\em Operator that increments a coordinate by the coordinate of the rhs (right hand side) \end{DoxyCompactList}\item 
+\hyperlink{classcoordinate}{coordinate} \& \hyperlink{classcoordinate_a676a8c7cc88af2315fcf14e1bfb1403e}{operator$\ast$=} (const \hyperlink{classcoordinate}{coordinate} \&rhs)
+\begin{DoxyCompactList}\small\item\em Operator that increments (by multiplication) a coordinate by the coordinate of the rhs (right hand side) \end{DoxyCompactList}\item 
+\hyperlink{classcoordinate}{coordinate} \& \hyperlink{classcoordinate_a0658bdeb9f68f6c5adc0608bc56966cb}{operator-\/=} (const \hyperlink{classcoordinate}{coordinate} \&rhs)
+\begin{DoxyCompactList}\small\item\em Operator that decrements a coordinate by the coordinate of the rhs (right hand side) \end{DoxyCompactList}\item 
+\hyperlink{classcoordinate}{coordinate} \hyperlink{classcoordinate_ae2a84b442393f7f9aa7894b904f8ca86}{operator+} () const
+\begin{DoxyCompactList}\small\item\em Operator that is used to differentiate positive with negative coordinates. \end{DoxyCompactList}\item 
+\hyperlink{classcoordinate}{coordinate} \hyperlink{classcoordinate_ad82716aaea1e1ca9bc2bd28121e9ff3e}{operator+} (const \hyperlink{classcoordinate}{coordinate} \&rhs) const
+\begin{DoxyCompactList}\small\item\em Operator that is used to sum two coordinates. \end{DoxyCompactList}\item 
+\hyperlink{classcoordinate}{coordinate} \hyperlink{classcoordinate_a5584a14ea2bf68d9f836f281ff0eca87}{operator$\ast$} (const \hyperlink{classcoordinate}{coordinate} \&rhs) const
+\begin{DoxyCompactList}\small\item\em Operator that is used to multiply two coordinates. \end{DoxyCompactList}\item 
+\hyperlink{classcoordinate}{coordinate} \hyperlink{classcoordinate_a6ffffa3a991bcbe09be645a8ed089624}{operator-\/} (const \hyperlink{classcoordinate}{coordinate} \&rhs) const
+\begin{DoxyCompactList}\small\item\em Operator that is used to substract two coordinates. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcoordinate_a30a97b1857e38204ea973bfdb653ccac}\label{classcoordinate_a30a97b1857e38204ea973bfdb653ccac}} 
+uint8\+\_\+t {\bfseries x}
+\item 
+\mbox{\Hypertarget{classcoordinate_a2281f38aa3d76247b60cbea68e0535ee}\label{classcoordinate_a2281f38aa3d76247b60cbea68e0535ee}} 
+uint8\+\_\+t {\bfseries y}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Niek Geijtenbeek 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/07/2017 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcoordinate_a6d57bb57e6b0b6beda68f50fe9ca6f5a}\label{classcoordinate_a6d57bb57e6b0b6beda68f50fe9ca6f5a}} 
+\index{coordinate@{coordinate}!coordinate@{coordinate}}
+\index{coordinate@{coordinate}!coordinate@{coordinate}}
+\subsubsection{\texorpdfstring{coordinate()}{coordinate()}}
+{\footnotesize\ttfamily coordinate\+::coordinate (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{x = {\ttfamily 0},  }\item[{uint8\+\_\+t}]{y = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is the constructor of the A\+DT. 
+
+The default values for the (x,y) are 0. 
+\begin{DoxyParams}{Parameters}
+{\em x} & \+: uint8\+\_\+t \\
+\hline
+{\em y} & \+: uint8\+\_\+t \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+If the giving x or y coordinate exceeds the resolution of the display, a error messeage will pop up. ~\newline
+Beware that this can cause undefined behaviour if used incorrectly! 
+\end{DoxyWarning}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcoordinate_a5584a14ea2bf68d9f836f281ff0eca87}\label{classcoordinate_a5584a14ea2bf68d9f836f281ff0eca87}} 
+\index{coordinate@{coordinate}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!coordinate@{coordinate}}
+\subsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily \hyperlink{classcoordinate}{coordinate} coordinate\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{const \hyperlink{classcoordinate}{coordinate} \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator that is used to multiply two coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & \+: coordinate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+new coordinate 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+This operator will N\+OT change the original value. Use $\ast$= instead if you want to change the value. 
+\end{DoxyWarning}
+\mbox{\Hypertarget{classcoordinate_a676a8c7cc88af2315fcf14e1bfb1403e}\label{classcoordinate_a676a8c7cc88af2315fcf14e1bfb1403e}} 
+\index{coordinate@{coordinate}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!coordinate@{coordinate}}
+\subsubsection{\texorpdfstring{operator$\ast$=()}{operator*=()}}
+{\footnotesize\ttfamily \hyperlink{classcoordinate}{coordinate}\& coordinate\+::operator$\ast$= (\begin{DoxyParamCaption}\item[{const \hyperlink{classcoordinate}{coordinate} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator that increments (by multiplication) a coordinate by the coordinate of the rhs (right hand side) 
+
+(x,y) $\ast$= (1,2) = (x$\ast$1, y$\ast$2) 
+\begin{DoxyParams}{Parameters}
+{\em rhs} & \+: coordinate \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcoordinate_ae2a84b442393f7f9aa7894b904f8ca86}\label{classcoordinate_ae2a84b442393f7f9aa7894b904f8ca86}} 
+\index{coordinate@{coordinate}!operator+@{operator+}}
+\index{operator+@{operator+}!coordinate@{coordinate}}
+\subsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classcoordinate}{coordinate} coordinate\+::operator+ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator that is used to differentiate positive with negative coordinates. 
+
+(5, 5) is the same as +(5, 5) \begin{DoxyReturn}{Returns}
+original coordinate 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcoordinate_ad82716aaea1e1ca9bc2bd28121e9ff3e}\label{classcoordinate_ad82716aaea1e1ca9bc2bd28121e9ff3e}} 
+\index{coordinate@{coordinate}!operator+@{operator+}}
+\index{operator+@{operator+}!coordinate@{coordinate}}
+\subsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classcoordinate}{coordinate} coordinate\+::operator+ (\begin{DoxyParamCaption}\item[{const \hyperlink{classcoordinate}{coordinate} \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator that is used to sum two coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & \+: coordinate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+new coordinate 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+This operator will N\+OT change the original value. Use += instead if you want to change the value. 
+\end{DoxyWarning}
+\mbox{\Hypertarget{classcoordinate_a8c842f84e51d6a8509f22a159aeed8a2}\label{classcoordinate_a8c842f84e51d6a8509f22a159aeed8a2}} 
+\index{coordinate@{coordinate}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!coordinate@{coordinate}}
+\subsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily \hyperlink{classcoordinate}{coordinate}\& coordinate\+::operator+= (\begin{DoxyParamCaption}\item[{const \hyperlink{classcoordinate}{coordinate} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator that increments a coordinate by the coordinate of the rhs (right hand side) 
+
+(x,y) += (1,2) = (x+1, y+2) 
+\begin{DoxyParams}{Parameters}
+{\em rhs} & \+: coordinate \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcoordinate_a6ffffa3a991bcbe09be645a8ed089624}\label{classcoordinate_a6ffffa3a991bcbe09be645a8ed089624}} 
+\index{coordinate@{coordinate}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!coordinate@{coordinate}}
+\subsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily \hyperlink{classcoordinate}{coordinate} coordinate\+::operator-\/ (\begin{DoxyParamCaption}\item[{const \hyperlink{classcoordinate}{coordinate} \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator that is used to substract two coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & \+: coordinate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+new coordinate 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+This operator will N\+OT change the original value. Use -\/= instead if you want to change the value. 
+\end{DoxyWarning}
+\mbox{\Hypertarget{classcoordinate_a0658bdeb9f68f6c5adc0608bc56966cb}\label{classcoordinate_a0658bdeb9f68f6c5adc0608bc56966cb}} 
+\index{coordinate@{coordinate}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!coordinate@{coordinate}}
+\subsubsection{\texorpdfstring{operator-\/=()}{operator-=()}}
+{\footnotesize\ttfamily \hyperlink{classcoordinate}{coordinate}\& coordinate\+::operator-\/= (\begin{DoxyParamCaption}\item[{const \hyperlink{classcoordinate}{coordinate} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator that decrements a coordinate by the coordinate of the rhs (right hand side) 
+
+(x,y) -\/= (1,2) = (x-\/1, y-\/2) 
+\begin{DoxyParams}{Parameters}
+{\em rhs} & \+: coordinate \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcoordinate_a2b84fb6537df4d1247ae5a85d9c47284}\label{classcoordinate_a2b84fb6537df4d1247ae5a85d9c47284}} 
+\index{coordinate@{coordinate}!operator=@{operator=}}
+\index{operator=@{operator=}!coordinate@{coordinate}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{classcoordinate}{coordinate}\& coordinate\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classcoordinate}{coordinate} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator that changes the orginial coordinate with the value of the rhs (right hand side) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & \+: coordinate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+This operator will change the orginal value! 
+\end{DoxyWarning}
+\mbox{\Hypertarget{classcoordinate_ae93ac2c7bceab17c68d3b4602165953b}\label{classcoordinate_ae93ac2c7bceab17c68d3b4602165953b}} 
+\index{coordinate@{coordinate}!shift\+Down@{shift\+Down}}
+\index{shift\+Down@{shift\+Down}!coordinate@{coordinate}}
+\subsubsection{\texorpdfstring{shift\+Down()}{shiftDown()}}
+{\footnotesize\ttfamily void coordinate\+::shift\+Down (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function that shifts the y coordinate up by a specific number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & \+: uint8\+\_\+t \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+This operator will change the orginal value! To move up, you need to increase the y value because the display is inverted. 
+\end{DoxyWarning}
+\mbox{\Hypertarget{classcoordinate_aa5d646342017b7c48ddbcd74bd48e352}\label{classcoordinate_aa5d646342017b7c48ddbcd74bd48e352}} 
+\index{coordinate@{coordinate}!shift\+Left@{shift\+Left}}
+\index{shift\+Left@{shift\+Left}!coordinate@{coordinate}}
+\subsubsection{\texorpdfstring{shift\+Left()}{shiftLeft()}}
+{\footnotesize\ttfamily void coordinate\+::shift\+Left (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function that shifts the x coordinate left by a specific number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & \+: uint8\+\_\+t \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+This operator will change the orginal value! 
+\end{DoxyWarning}
+\mbox{\Hypertarget{classcoordinate_aa723f2bf9768db3fd3874376702f2283}\label{classcoordinate_aa723f2bf9768db3fd3874376702f2283}} 
+\index{coordinate@{coordinate}!shift\+Right@{shift\+Right}}
+\index{shift\+Right@{shift\+Right}!coordinate@{coordinate}}
+\subsubsection{\texorpdfstring{shift\+Right()}{shiftRight()}}
+{\footnotesize\ttfamily void coordinate\+::shift\+Right (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function that shifts the x coordinate right by a specific number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & \+: uint8\+\_\+t \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+This operator will change the orginal value! 
+\end{DoxyWarning}
+\mbox{\Hypertarget{classcoordinate_a895e556f2a260c583ae167789bf97d03}\label{classcoordinate_a895e556f2a260c583ae167789bf97d03}} 
+\index{coordinate@{coordinate}!shift\+Up@{shift\+Up}}
+\index{shift\+Up@{shift\+Up}!coordinate@{coordinate}}
+\subsubsection{\texorpdfstring{shift\+Up()}{shiftUp()}}
+{\footnotesize\ttfamily void coordinate\+::shift\+Up (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function that shifts the y coordinate down by a specific number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & \+: uint8\+\_\+t \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+This operator will change the orginal value! To move up, you need to decrease the y value because the display is inverted. 
+\end{DoxyWarning}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{coordinate_8hpp}{coordinate.\+hpp}\end{DoxyCompactItemize}

@@ -1,0 +1,155 @@
+\hypertarget{classshapes}{}\section{shapes Class Reference}
+\label{classshapes}\index{shapes@{shapes}}
+
+
+{\ttfamily \#include $<$shapes.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classshapes_a61a7ba5ffd8f704b42f61a01f35ee653}{shapes} (\hyperlink{classdisplay}{display} \&w)
+\begin{DoxyCompactList}\small\item\em Constructor of the shapes class. \end{DoxyCompactList}\item 
+void \hyperlink{classshapes_a159e2c9aac754341cb42cc4173175bb7}{line} (\hyperlink{classcoordinate}{coordinate} start, \hyperlink{classcoordinate}{coordinate} end)
+\begin{DoxyCompactList}\small\item\em E\+X\+T\+R\+E\+M\+E\+LY fast line algorithm made by a Professor at M\+IT. \end{DoxyCompactList}\item 
+void \hyperlink{classshapes_aceaca21ee5cc452fe206335c18ae49eb}{super\+Kitt} (\hyperlink{classcoordinate}{coordinate} start, \hyperlink{classcoordinate}{coordinate} end, uint8\+\_\+t delay, uint8\+\_\+t times)
+\begin{DoxyCompactList}\small\item\em Special kitt function that moves a vertical line from one side to the other for a certain n amount of times. \end{DoxyCompactList}\item 
+void \hyperlink{classshapes_a129d716caf5f38d1bed560590e9b7bbc}{rectangle} (\hyperlink{classcoordinate}{coordinate} start, \hyperlink{classcoordinate}{coordinate} end)
+\begin{DoxyCompactList}\small\item\em Function that draw a rectangle by making 4 lines. \end{DoxyCompactList}\item 
+void \hyperlink{classshapes_a7da31426ad907ab181bd862a3f9789c9}{circle} (\hyperlink{classcoordinate}{coordinate} midpoint, int radius)
+\begin{DoxyCompactList}\small\item\em Pitteway circle algorithm. \end{DoxyCompactList}\item 
+void \hyperlink{classshapes_acbc5439aa59f0eea17e166eb21163b7c}{triangle} (\hyperlink{classcoordinate}{coordinate} start, int base, int height)
+\begin{DoxyCompactList}\small\item\em Function that draws a triangle by making 3 lines. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Niek Geijtenbeek 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10/07/2017 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classshapes_a61a7ba5ffd8f704b42f61a01f35ee653}\label{classshapes_a61a7ba5ffd8f704b42f61a01f35ee653}} 
+\index{shapes@{shapes}!shapes@{shapes}}
+\index{shapes@{shapes}!shapes@{shapes}}
+\subsubsection{\texorpdfstring{shapes()}{shapes()}}
+{\footnotesize\ttfamily shapes\+::shapes (\begin{DoxyParamCaption}\item[{\hyperlink{classdisplay}{display} \&}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor of the shapes class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & \+: display \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classshapes_a7da31426ad907ab181bd862a3f9789c9}\label{classshapes_a7da31426ad907ab181bd862a3f9789c9}} 
+\index{shapes@{shapes}!circle@{circle}}
+\index{circle@{circle}!shapes@{shapes}}
+\subsubsection{\texorpdfstring{circle()}{circle()}}
+{\footnotesize\ttfamily void shapes\+::circle (\begin{DoxyParamCaption}\item[{\hyperlink{classcoordinate}{coordinate}}]{midpoint,  }\item[{int}]{radius }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Pitteway circle algorithm. 
+
+This funcition can be used to draw a circle on a specific coordinate of a display 
+\begin{DoxyParams}{Parameters}
+{\em midpoint} & \+: coordinate \\
+\hline
+{\em radius} & \+: coordinate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+circles can look odd with display with a low resolution. 
+\end{DoxyWarning}
+\mbox{\Hypertarget{classshapes_a159e2c9aac754341cb42cc4173175bb7}\label{classshapes_a159e2c9aac754341cb42cc4173175bb7}} 
+\index{shapes@{shapes}!line@{line}}
+\index{line@{line}!shapes@{shapes}}
+\subsubsection{\texorpdfstring{line()}{line()}}
+{\footnotesize\ttfamily void shapes\+::line (\begin{DoxyParamCaption}\item[{\hyperlink{classcoordinate}{coordinate}}]{start,  }\item[{\hyperlink{classcoordinate}{coordinate}}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+E\+X\+T\+R\+E\+M\+E\+LY fast line algorithm made by a Professor at M\+IT. 
+
+This function uses a heavily modified version of the xiaolin wu anti-\/aliasing algorithm. ~\newline
+This modified version removes the contrast correction that comes standard to the original version and enhances some other features like less redundant code. ~\newline
+This algortihm also is very optimized for smaller microcontrollers or hardware in general by using bitshifting instead of diferncias in more loops. 
+\begin{DoxyParams}{Parameters}
+{\em start} & \+: coordinate \\
+\hline
+{\em end} & \+: coordinate \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classshapes_a129d716caf5f38d1bed560590e9b7bbc}\label{classshapes_a129d716caf5f38d1bed560590e9b7bbc}} 
+\index{shapes@{shapes}!rectangle@{rectangle}}
+\index{rectangle@{rectangle}!shapes@{shapes}}
+\subsubsection{\texorpdfstring{rectangle()}{rectangle()}}
+{\footnotesize\ttfamily void shapes\+::rectangle (\begin{DoxyParamCaption}\item[{\hyperlink{classcoordinate}{coordinate}}]{start,  }\item[{\hyperlink{classcoordinate}{coordinate}}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function that draw a rectangle by making 4 lines. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start} & \+: coordinate \\
+\hline
+{\em end} & \+: coordinate \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classshapes_aceaca21ee5cc452fe206335c18ae49eb}\label{classshapes_aceaca21ee5cc452fe206335c18ae49eb}} 
+\index{shapes@{shapes}!super\+Kitt@{super\+Kitt}}
+\index{super\+Kitt@{super\+Kitt}!shapes@{shapes}}
+\subsubsection{\texorpdfstring{super\+Kitt()}{superKitt()}}
+{\footnotesize\ttfamily void shapes\+::super\+Kitt (\begin{DoxyParamCaption}\item[{\hyperlink{classcoordinate}{coordinate}}]{start,  }\item[{\hyperlink{classcoordinate}{coordinate}}]{end,  }\item[{uint8\+\_\+t}]{delay,  }\item[{uint8\+\_\+t}]{times }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Special kitt function that moves a vertical line from one side to the other for a certain n amount of times. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start} & \+: coordinate \\
+\hline
+{\em end} & \+: coordinate \\
+\hline
+{\em delay} & \+: uint8\+\_\+t \\
+\hline
+{\em times} & \+: uint8\+\_\+t \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classshapes_acbc5439aa59f0eea17e166eb21163b7c}\label{classshapes_acbc5439aa59f0eea17e166eb21163b7c}} 
+\index{shapes@{shapes}!triangle@{triangle}}
+\index{triangle@{triangle}!shapes@{shapes}}
+\subsubsection{\texorpdfstring{triangle()}{triangle()}}
+{\footnotesize\ttfamily void shapes\+::triangle (\begin{DoxyParamCaption}\item[{\hyperlink{classcoordinate}{coordinate}}]{start,  }\item[{int}]{base,  }\item[{int}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function that draws a triangle by making 3 lines. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start} & \+: coordinate \+: start point of the triangle \\
+\hline
+{\em base} & \+: int \+: length of the base of the triangle \\
+\hline
+{\em height} & \+: int \+: length of the height of the triangle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+Triangle will always be facing downwards, because the display has an inverted y axis 
+\end{DoxyWarning}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{shapes_8hpp}{shapes.\+hpp}\end{DoxyCompactItemize}
