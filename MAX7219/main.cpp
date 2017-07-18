@@ -19,15 +19,14 @@ int main(void){
       w.setBrightness(70);
       w.clean();
       
-      e.test1_1(coordinate(5,5)); // single pixel
+//      e.test1_1(coordinate(5,5)); // single pixel
 //      e.test1_2(); // multple pixels
 //      e.test1_3(); //error message
 //      e.test2_1(); //super kitt
-//      e.test2_2(); // superkitt v2.0
 
 //      s.line(coordinate(1,1), coordinate(10,5)); //line
 //      w.update();
-
+//
 //      e.test3_2(coordinate(2,2) , coordinate(10,5)); //rectangle
 //      e.test3_3(coordinate(5,5), 3); //circle
 //      e.test3_4(coordinate(1,1), 30, 5); //triangle
@@ -35,9 +34,10 @@ int main(void){
 //      e.test4_2(); //print text
 //      e.test5_1(1); //show looped invader
 //      e.test5_3(); //show appearing invaders 10 times each
-//      char test[5] = "TEST";
+//      char test[5] = " TI ";
 //      e.test6_1(test); // show 'test' on display
-//      e.test6_2(1);
+      e.test6_2(1);
+
       
       
       
